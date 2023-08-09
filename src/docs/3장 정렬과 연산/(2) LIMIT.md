@@ -2,7 +2,7 @@
 
 ## 목차
 
-1. [행수 제한]
+1. [행수 제한](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/(2)%20LIMIT.md#%ED%96%89%EC%88%98-%EC%A0%9C%ED%95%9C)
 
 
 ## 행수 제한
@@ -30,13 +30,13 @@ WHERE 및 JOIN -> GROUP BY -> DISTNCT -> HAVING -> ORDER BY -> LIMIT
 
 `select * from study_groups where type = 'SPRING';`
 
-![[Pasted image 20230808174104.png]]
+![[Pasted image 20230808174104.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808174104.png)
 
 한 페이지 내부에 서적을 2개씩만 표현한다고 했을 때 아래와 같이 쿼리를 작성할 수 있습니다.
 
 `select * from study_groups where type = 'SPRING' limit 2;`
 
-![[Pasted image 20230808174213.png]]
+![[Pasted image 20230808174213.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808174213.png)
 
 이제 첫 번째 페이지에 표시할 서적들을 표현할 수 있게 되었습니다. 2번 째 페이지를 조회하기 위해서는 어떻게 해야할까요? 이 때 유용한 문법이 OFFSET입니다. OFFSET은 OO부터 라는 의미를 가집니다. OFFSET의 시작 값은 0 입니다. 
 
@@ -44,5 +44,5 @@ WHERE 및 JOIN -> GROUP BY -> DISTNCT -> HAVING -> ORDER BY -> LIMIT
 
 `select * from study_groups where type = 'SPRING' limit 2 offset 2;`
 
-![[Pasted image 20230808174444.png]]
+![[Pasted image 20230808174444.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808174444.png)
 
