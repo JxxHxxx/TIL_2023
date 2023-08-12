@@ -2,8 +2,8 @@
 이 장에서는 데이터를 갱신하는 방법을 정리하겠습니다. 테이블의 셀에 저장되어 있는 값을 갱신하려면 UPDARE 명령을 사용합니다.
 
 ## 목차
-1. [UPDATE로 데이터 갱신하기](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md#update%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0)
-2. [SET 구의 실행 순서](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md#set-%EA%B5%AC%EC%9D%98-%EC%8B%A4%ED%96%89-%EC%88%9C%EC%84%9C)
+1. [UPDATE로 데이터 갱신하기]
+2. [SET 구의 실행 순서]
 
 ## UPDATE로 데이터 갱신하기
 
