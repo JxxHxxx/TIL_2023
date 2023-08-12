@@ -2,8 +2,8 @@
 이 장에서는 데이터를 갱신하는 방법을 정리하겠습니다. 테이블의 셀에 저장되어 있는 값을 갱신하려면 UPDARE 명령을 사용합니다.
 
 ## 목차
-1. [UPDATE로 데이터 갱신하기]
-2. [SET 구의 실행 순서]
+1. [UPDATE로 데이터 갱신하기](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md#update%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0)
+2. [SET 구의 실행 순서](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md#set-%EA%B5%AC%EC%9D%98-%EC%8B%A4%ED%96%89-%EC%88%9C%EC%84%9C)
 
 ## UPDATE로 데이터 갱신하기
 
@@ -32,21 +32,21 @@
 
 먼저 초기 테이블은 아래와 같습니다.
 
-![[Pasted image 20230810133213.png]]
+![[Pasted image 20230810133213.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/Pasted%20image%2020230810133213.png)
 
 먼저 1번 UPDATE 명령의 결과를 보겠습니다.
 `UPDATE sample1 SET no = no + 1, val1 = no;`
 
-![[Pasted image 20230810133244.png]]
+![[Pasted image 20230810133244.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/Pasted%20image%2020230810133244.png)
 
 다시 테이블을 초기화하고 아래와 같은 상태로 만들어주었습니다.
 
-![[Pasted image 20230810133213.png]]
+![[Pasted image 20230810133213.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/Pasted%20image%2020230810133213.png)
 
 다음은 2번 UPDATE 명령의 결과입니다. 
 `UPDATE sample1 SET val1 = no, no = no + 1;`
 
-![[Pasted image 20230810134017.png]]
+![[Pasted image 20230810134017.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/Pasted%20image%2020230810134017.png)
 
 MySQL에서는 SET 구에 기술된 순서로 갱신 처리가 일어납니다. 다시 말해
 `UPDATE sample1 SET no = no + 1, val1 = no;`  명령문이 있을 때 `no = no + 1` 을 처리한 뒤 `val1 = no` 를 처리합니다. 따라서 MySQL의 경우, 갱신식 안에서 열을 참조할 때는 처리 순서를 고려해야 합니다. 반면 Oracle에서는 SET구에 기술한 식의 순서가 처리에 영향을 주지 않습니다.
