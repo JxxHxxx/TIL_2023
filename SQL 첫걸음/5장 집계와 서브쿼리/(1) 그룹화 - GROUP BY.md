@@ -4,13 +4,13 @@
 
 아래와 같은 테이블이 존재했을 때
 
-![[Pasted image 20230810155827.png]]
+![[Pasted image 20230810155827.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230810155827.png)
 
 
 GROUP BY 를 통해 그룹을 나누고 집계 합수를 조합할 수 있습니다.
 `select name, sum(quantity) from sample51 GROUP BY name;`
 
-![[Pasted image 20230810160237.png]]
+![[Pasted image 20230810160237.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230810160237.png)
 
 
 ## HAVING 구로 조건 지정
@@ -47,7 +47,7 @@ HAVING sum(quantity) > 5;
 
 이전과는 달리 결과를 볼 수 있습니다.
 
-![[Pasted image 20230810162404.png]]
+![[Pasted image 20230810162404.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230810162404.png)
 
 
 ## 복수열의 그룹화
@@ -63,7 +63,7 @@ GROUP BY name;
 
 quantity 열은 사용할 수 없습니다. 데이터베이스에 따라 에러가 발생할 수 있습니다. MySQL에서는 아래와 같은 에러가 발생합니다.
 
-![[Pasted image 20230810163221.png]]
+![[Pasted image 20230810163221.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230810163221.png)
 
 에러가 발생하는 이유는 name 컬럼은 GROUP BY에 의해 그룹핑되었지만 quantity는 그루핑되지 않았습니다. 이에 따라 어떠한 열 값을 반환해야 하는지 데이터베이스는 판단할 수 없습니다.
 
