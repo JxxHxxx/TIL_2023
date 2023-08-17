@@ -11,12 +11,12 @@ SQL은 집합을 다루는 집계 함수를 제공합니다. 집계란, 집합�
 
 아래와 같은 테이블이 존재할 때
 
-![[Pasted image 20230810151048.png]]
+![[Pasted image 20230810151048.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230810151048.png)
 
 
 `select count(name), count(idx) from member2;`
 
 다음 명령문의 결과에서 name 컬럼을 기준으로한 count 집계 함수의 결과는 2입니다. null 을 제외했기 때문입니다.
 
-![[Pasted image 20230810151102.png]]
+![[Pasted image 20230810151102.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230810151102.png)
 
