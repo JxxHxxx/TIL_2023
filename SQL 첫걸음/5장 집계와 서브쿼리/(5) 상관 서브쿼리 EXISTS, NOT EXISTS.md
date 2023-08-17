@@ -8,11 +8,11 @@ EXISTS 술어를 사용하면 서브쿼리가 반환하는 결과값이 있는�
 
 `select * from sample551;`
 
-![[Pasted image 20230812173530.png]]
+![[Pasted image 20230812173530.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230812173530.png)
 
 `select * from sample552;`
 
-![[Pasted image 20230812173539.png]]
+![[Pasted image 20230812173539.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230812173539.png)
 
 지금부터 sample552에 no 열의 값과 같은 행이 있다면 sample551 val 열을 '있음' 이라는 값으로 그것이 아니라면 '없음' 이라는 값으로 갱신하겠습니다.
 
@@ -37,7 +37,7 @@ UPDATE sample551 SET val = '없음' WHERE
 ```
 
 
-![[Pasted image 20230812174656.png]]
+![[Pasted image 20230812174656.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230812174656.png)
 
 
 ```
