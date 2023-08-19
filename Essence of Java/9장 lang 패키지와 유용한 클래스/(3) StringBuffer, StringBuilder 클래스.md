@@ -20,9 +20,9 @@ sb.append("안녕안녕안녕안녕안녕안녕안녕");
 sb.append("하세요하세요하세요하세요하세요하세요하세요");  
 ```
 
-![[Pasted image 20230819214528.png]]
+![[Pasted image 20230819214528.png]](https://github.com/JxxHxxx/TIL/blob/master/Essence%20of%20Java/9%EC%9E%A5%20lang%20%ED%8C%A8%ED%82%A4%EC%A7%80%EC%99%80%20%EC%9C%A0%EC%9A%A9%ED%95%9C%20%ED%81%B4%EB%9E%98%EC%8A%A4/Pasted%20image%2020230819214528.png)
 
-![[Pasted image 20230819214538.png]]
+![[Pasted image 20230819214538.png]](https://github.com/JxxHxxx/TIL/blob/master/Essence%20of%20Java/9%EC%9E%A5%20lang%20%ED%8C%A8%ED%82%A4%EC%A7%80%EC%99%80%20%EC%9C%A0%EC%9A%A9%ED%95%9C%20%ED%81%B4%EB%9E%98%EC%8A%A4/Pasted%20image%2020230819214538.png)
 
 배열의 길이는 변경될 수 없기때문에 새로운 길이의 배열을 생성한 후에 이전 배열의 값을 복사해서 이러한 작업을 지속한다.
 
