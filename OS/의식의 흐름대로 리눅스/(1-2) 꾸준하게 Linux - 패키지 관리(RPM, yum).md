@@ -6,7 +6,7 @@ RPM은 리눅스 배포판 제작회사 중 하나인 redhat에서 패키지를 
 RPM은 {패키지명}-{버전}-{릴리즈}-{아키텍쳐}.rpm 의 형식으로 작성되어 있습니다.
 
 예시)
-![[Pasted image 20230820142329.png]]
+![[Pasted image 20230820142329.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/OS/%EC%9D%98%EC%8B%9D%EC%9D%98%20%ED%9D%90%EB%A6%84%EB%8C%80%EB%A1%9C%20%EB%A6%AC%EB%88%85%EC%8A%A4/images/Pasted%20image%2020230820142329.png)
 
 
 rpm {옵션} 파일 : rpm 패키지를 설치, 삭제, 관리한다.
