@@ -10,18 +10,18 @@
 
 예시)
 
-![[Pasted image 20230820144535.png]]
+![[Pasted image 20230820144535.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/OS/%EC%9D%98%EC%8B%9D%EC%9D%98%20%ED%9D%90%EB%A6%84%EB%8C%80%EB%A1%9C%20%EB%A6%AC%EB%88%85%EC%8A%A4/images/Pasted%20image%2020230820144535.png)
 
 환경 변수를 지정하기 위해 `bashrc` 파일을 편집하였습니다. YEAR 는 이미 로드된 변수이고 PREV_YEAR 는 아직 로드되지 않은 변수입니다.
 
 그래서 PREV_YEAR 변수를 출력 명령을 내려도 예상한 결과가 나오지 않습니다.
 
-![[Pasted image 20230820144705.png]]
+![[Pasted image 20230820144705.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/OS/%EC%9D%98%EC%8B%9D%EC%9D%98%20%ED%9D%90%EB%A6%84%EB%8C%80%EB%A1%9C%20%EB%A6%AC%EB%88%85%EC%8A%A4/images/Pasted%20image%2020230820144705.png)
 
 
 이제 왜 로드가 필요한지 알게되었죠? `source` 명령어를 이용해서 로드해봅시다.
 
-![[Pasted image 20230820144907.png]]
+![[Pasted image 20230820144907.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/OS/%EC%9D%98%EC%8B%9D%EC%9D%98%20%ED%9D%90%EB%A6%84%EB%8C%80%EB%A1%9C%20%EB%A6%AC%EB%88%85%EC%8A%A4/images/Pasted%20image%2020230820144907.png)
 
 
 #### source
