@@ -18,7 +18,7 @@ vim // vi라고만 입력해도 가능
 
 실제로 실행해보면 아래와 같은 GUI 가 보이게 된다.
 
-![[Pasted image 20230820133712.png]]
+![[Pasted image 20230820133712.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/OS/%EC%9D%98%EC%8B%9D%EC%9D%98%20%ED%9D%90%EB%A6%84%EB%8C%80%EB%A1%9C%20%EB%A6%AC%EB%88%85%EC%8A%A4/images/Pasted%20image%2020230820133712.png)
 
 Vim에는 명렁어를 입력하는 모드와 텍스트를 입력하는 모드가 있습니다. 그래서 텍스트를 입력하는 모드에서는 명령어를 입력해도 텍스트로 입력되어서 원하는 기능을 수행할 수 없습니다. 이 때는 `esc` **를 눌러 입력 모드에서 벗어나야 합니다.**
 
@@ -80,7 +80,7 @@ Ctrl + r // 취소하기 전의 상태로 돌아감 info) r 은 redo의 약자
 
 예시) `/important`
 
-![[Pasted image 20230820140827.png]]
+![[Pasted image 20230820140827.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/OS/%EC%9D%98%EC%8B%9D%EC%9D%98%20%ED%9D%90%EB%A6%84%EB%8C%80%EB%A1%9C%20%EB%A6%AC%EB%88%85%EC%8A%A4/images/Pasted%20image%2020230820140827.png)
 
 검색된 문자는 하이라이트 표시됩니다. 검색된 문자에 대한 관련 명령어입니다.
 
