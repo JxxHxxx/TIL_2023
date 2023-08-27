@@ -2,7 +2,7 @@
 리눅스 배포판은 FHS라는 표준에 따른 디렉토리 구성을 권장합니다.
 
 
-![[Pasted image 20230820152258.png]]
+![[Pasted image 20230820152258.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/OS/%EC%9D%98%EC%8B%9D%EC%9D%98%20%ED%9D%90%EB%A6%84%EB%8C%80%EB%A1%9C%20%EB%A6%AC%EB%88%85%EC%8A%A4/images/Pasted%20image%2020230820152258.png)
 
 각각의 디렉터리는 다음을 의미한다.
 
