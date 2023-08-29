@@ -1,3 +1,4 @@
+*기준 - ORACLE*
 
 `RECYCLEBIN` 객체에는 드랍 된 `TABLE` , `INDEX` 내역 등이 존재한다. 구글에서는 쓰레기통이라고도 표현하며 이를 통해 drop 된 테이블을 복구할 수도 있다. 우선 `RECYCLEBIN` 을 조회해보자.
 
