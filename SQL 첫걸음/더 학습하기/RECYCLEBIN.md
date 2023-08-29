@@ -9,7 +9,7 @@ SELECT * FROM RECYCLEBIN;
 
 *결과*
 
-![[Pasted image 20230829125228.png]]
+![[Pasted image 20230829125228.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/%EB%8D%94%20%ED%95%99%EC%8A%B5%ED%95%98%EA%B8%B0/Pasted%20image%2020230829125228.png)
 
 
 ```
@@ -45,7 +45,7 @@ SHOW parmeter RECYCLEBIN;
 ```
 
 
-![[Pasted image 20230829123303.png]]
+![[Pasted image 20230829123303.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/%EB%8D%94%20%ED%95%99%EC%8A%B5%ED%95%98%EA%B8%B0/Pasted%20image%2020230829123303.png)
 
 
 `RECYCLEBIN` 활성화 옵션을 변경할 수도 있다.
