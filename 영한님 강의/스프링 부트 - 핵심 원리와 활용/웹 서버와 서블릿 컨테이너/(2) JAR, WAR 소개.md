@@ -11,7 +11,7 @@ WAR(Web Application Archive)로 웹 애플리케이션 서버에 배포할 때 �
 
 *WAR 구조*
 
-![[Pasted image 20230905000759.png]]
+![[Pasted image 20230905000759.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/%EC%98%81%ED%95%9C%EB%8B%98%20%EA%B0%95%EC%9D%98/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%20-%20%ED%95%B5%EC%8B%AC%20%EC%9B%90%EB%A6%AC%EC%99%80%20%ED%99%9C%EC%9A%A9/images/Pasted%20image%2020230905000759.png)
 
 - `WEB-INF`
 	- `classes` 실행 클래스 모음
