@@ -30,7 +30,7 @@ id 'io.spring.dependency-management' version '1.1.0'
 
 https://spring.io/projects/spring-boot#learn 를 참고하여 사용중인 부트 버전을 찾자. 이후 `Dependency Versions` 에서 부트에서 관리하는 라이브러리 버전을 확인할 수 있다.
 
-![[Pasted image 20230913230122.png]]
+![[Pasted image 20230913230122.png]](https://github.com/JxxHxxx/TIL_2023/blob/master/%EC%98%81%ED%95%9C%EB%8B%98%20%EA%B0%95%EC%9D%98/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%20-%20%ED%95%B5%EC%8B%AC%20%EC%9B%90%EB%A6%AC%EC%99%80%20%ED%99%9C%EC%9A%A9/3.%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%20%EC%8A%A4%ED%83%80%ED%84%B0%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%20%EA%B4%80%EB%A6%AC/Pasted%20image%2020230913230122.png)
 
 참고로 스프링에서 모든 라이브러리를 관리하지 않는다. 관리되지 않는 라이브러리는 버전 명을 명시해야 한다.
 
