@@ -8,7 +8,7 @@
 
 앞서 테이블에서 val 열의 값이 '있음' 인 행을 조회하려면 어떻게 할 수 있을까요?
 
-![[Pasted image 20230812174656.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230812174656.png)
+![[Pasted image 20230812174656.png]](Pasted%20image%2020230812174656.png)
 
 OR를 이용한다면 아래와 같이 조회할 수 있습니다.
 `SELECT * FROM sample551 WHERE no = 3 OR no = 5;`
@@ -34,14 +34,14 @@ OR를 이용한다면 아래와 같이 조회할 수 있습니다.
 
 다르게 말하면 아래와 같은 테이블이 있을 때 NULL = NULL 을 계산할 수 없기 때문에
 
-*sample551*
-![[Pasted image 20230812191359.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230812191359.png)
+*sample551*   
+![[Pasted image 20230812191359.png]](Pasted%20image%2020230812191359.png)
 
-*sample552*
-![[Pasted image 20230812191324.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230812191324.png)
+*sample552*   
+![[Pasted image 20230812191324.png]](Pasted%20image%2020230812191324.png)
 
 
 `SELECT * FROM sample551 WHERE no IN (SELECT no FROM sample552);` 의 결과에서 `null` 을 가진 열이 반환되지 않습니다.
 
-![[Pasted image 20230812191508.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/5%EC%9E%A5%20%EC%A7%91%EA%B3%84%EC%99%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/Pasted%20image%2020230812191508.png)
+![[Pasted image 20230812191508.png]](Pasted%20image%2020230812191508.png)
 
