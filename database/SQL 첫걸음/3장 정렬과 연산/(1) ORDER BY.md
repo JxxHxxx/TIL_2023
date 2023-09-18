@@ -2,8 +2,8 @@
 
 ## 목차
 
-1. [정렬 - ORDER BY](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/(1)%20ORDER%20BY.md#%EC%A0%95%EB%A0%AC---order-by)
-2. [복수의 열을 지정해 정렬하기](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/(1)%20ORDER%20BY.md#%EB%B3%B5%EC%88%98%EC%9D%98-%EC%97%B4%EC%9D%84-%EC%A7%80%EC%A0%95%ED%95%B4-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0)
+1. [정렬 - ORDER BY]((1)%20ORDER%20BY.md#%EC%A0%95%EB%A0%AC---order-by)
+2. [복수의 열을 지정해 정렬하기]((1)%20ORDER%20BY.md#%EB%B3%B5%EC%88%98%EC%9D%98-%EC%97%B4%EC%9D%84-%EC%A7%80%EC%A0%95%ED%95%B4-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0)
 
 ## 정렬 - ORDER BY
 
@@ -16,7 +16,7 @@ ORDER BY 구를 지정하지 않을 경우에는 데이터베이스 내부에 �
 
 `select * from study_groups order by created_at desc;`
 
-![[Pasted image 20230808161712.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808161712.png)
+![[Pasted image 20230808161712.png]](Pasted%20image%2020230808161712.png)
 
 보시는 것과 같이 내림차순으로 레코드가 정렬된 것을 볼 수 있습니다. 내림(오름) 차순에 관한 자세한 내용은 아래 대소 관계에서 추가적인 설명을 하겠습니다.
 
@@ -31,7 +31,7 @@ ORDER BY 구를 지정하지 않을 경우에는 데이터베이스 내부에 �
 - 문자열형 : 문자열 자료형은 사전식 순서로 대소를 판별합니다. `apple` 보다는 `banana` 가 더 크다고 판별합니다.  `가방` 보다 `다람쥐` 가 더 크다고 판별합니다. 쉽게 사전을 펼쳤을 때 뒤에 있는 문자열이 더 크다고 판별합니다. 예시를 하나 보겠습니다.
    `select * from study_groups order by name desc;`
 
-	![[Pasted image 20230808162454.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808162454.png)
+	![[Pasted image 20230808162454.png]](Pasted%20image%2020230808162454.png)
 
  결과를 보면 알 수 있듯이 사전 순으로 정렬된 것을 볼 수 있습니다. 그리고 알파벳보다 한글이 더 큰 값을 가지는 것도 볼 수 있네요. (이 부분은 뭔가 데이터베이스 설정에 따라 바꿀 수 있을 것 같은데요?)
 
@@ -41,7 +41,7 @@ ORDER BY 구를 지정하지 않을 경우에는 데이터베이스 내부에 �
 
 `select *from string_numbers order by val;`
 
-![[Pasted image 20230808163225.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808163225.png)
+![[Pasted image 20230808163225.png]](Pasted%20image%2020230808163225.png)
 
 - 더 알아보기
 ```
@@ -62,13 +62,13 @@ ORDER BY로 행을 정렬하는 경우 같은 값을 가진 행의 순서는 **�
 
 아래와 같은 테이블 존재합니다.
 
-![[Pasted image 20230808165137.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808165137.png)
+![[Pasted image 20230808165137.png]](Pasted%20image%2020230808165137.png)
 
 학년, 학급에 알맞게 정렬한다고 해봅시다. (1-1, 1-2, 1-3, 2-1, 2-2 이런 순으로...) 대강 생각해봐도 grade 만으로는 원하는 결과를 얻을 수 없을 것 같습니다. 이럴 때는 1개 이상의 열을 정렬 기준으로 지정합니다.
 
 `select * from school_class order by grade, class;`
 
-![[Pasted image 20230808165242.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808165242.png)
+![[Pasted image 20230808165242.png]](Pasted%20image%2020230808165242.png)
 
 `order by` 뒤에 지정한 각각의 열에는 `asc` 정렬 기준이 생략되었습니다. 
 
@@ -79,7 +79,7 @@ select * from school_class order by grade desc, class asc; 이런 식으로 정�
 앞서 `select * from school_class order by grade, class;` SQL을 
 `select * from school_class order by class, grade;` 으로 변경해보겠습니다.
 
-![[Pasted image 20230808165658.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808165658.png)
+![[Pasted image 20230808165658.png]](Pasted%20image%2020230808165658.png)
 
 보시는 것과 같이 `class` 열을 먼저 정렬한 뒤 `grade`열을 정렬합니다. 즉, ORDER BY 구 뒤에 지정한 열의 순서대로 정렬을 진행합니다.
 
@@ -92,4 +92,4 @@ select * from school_class order by grade desc, class asc; 이런 식으로 정�
 예시
 `select *from school_class order by grade desc;`
 
-![[Pasted image 20230808170205.png]](https://github.com/JxxHxxx/sql-master/blob/master/src/docs/3%EC%9E%A5%20%EC%A0%95%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0/Pasted%20image%2020230808170205.png)
+![[Pasted image 20230808170205.png]](Pasted%20image%2020230808170205.png)
