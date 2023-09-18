@@ -1,10 +1,6 @@
 
 데이터를 삭제하는 방법을 배워보겠습니다. 데이터베이스의 테이블에서 행을 삭제하기 위해서는 DELETE 명령을 사용합니다. 그리고 데이터 삭제 방법인 물리삭제/논리삭제에 대해서도 알아보겠습니다.
 
-## 목차
-
-1. [DELETE로 행 삭제하기](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/(1)%20%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE%2C%20%EB%AC%BC%EB%A6%AC%20%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%20%EC%82%AD%EC%A0%9C.md#delete%EB%A1%9C-%ED%96%89-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0)
-2. [물리삭제와 논리삭제](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/(1)%20%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE%2C%20%EB%AC%BC%EB%A6%AC%20%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%20%EC%82%AD%EC%A0%9C.md#%EB%AC%BC%EB%A6%AC%EC%82%AD%EC%A0%9C%EC%99%80-%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C)
 ## DELETE로 행 삭제하기
 
 RDBMS에서 데이터를 삭제할 경우에는 행 단위로 DELETE 명령을 수행합니다.
@@ -21,7 +17,7 @@ WHERE 조건을 생략할 경우, 모든 행이 삭제됩니다. WHERE 조건을
 
 쉽게 물리삭제는 테이블에서 데이터를 영구히 삭제하는 것이라면 논리 삭제는 아래와 같이 삭제 표기를 해주는 것을 의미합니다.
 
-![[Pasted image 20230810135542.png]](https://github.com/JxxHxxx/TIL/blob/master/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/Pasted%20image%2020230810135542.png)
+![[Pasted image 20230810135542.png]](https://github.com/JxxHxxx/TIL/blob/master/database/SQL%20%EC%B2%AB%EA%B1%B8%EC%9D%8C/4%EC%9E%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B6%94%EA%B0%80%2C%20%EC%82%AD%EC%A0%9C%2C%20%EA%B0%B1%EC%8B%A0/Pasted%20image%2020230810135542.png)
 
 즉, DELETE 명령이 아닌 UPDATE 명령을 통해 삭제 표시를 남깁니다.
 
