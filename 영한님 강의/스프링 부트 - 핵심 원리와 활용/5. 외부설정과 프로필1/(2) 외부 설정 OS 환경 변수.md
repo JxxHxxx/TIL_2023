@@ -21,7 +21,7 @@ public static void main(String[] args) {
 
 *결과 일부*
 
-![[Pasted image 20230920232620.png]](Pasted image 20230920232620.png)
+![[Pasted image 20230920232620.png]](Pasted%20image%2020230920232620.png)
 
 
 ### 실제 활용 방법
