@@ -17,7 +17,7 @@
 
 *생활코딩 - list 강의 내 이미지*
 
-![[Pasted image 20230924121205.png]]
+![[Pasted image 20230924121205.png]](Pasted%20image%2020230924121205.png)
 
 
 `LinkedList` 각 요소(`node`)들은 자신과 연결된 다음(`next`) 요소 참조(주소값)와 데이터로 구성되어 있다.
