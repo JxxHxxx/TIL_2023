@@ -31,4 +31,4 @@ public static class Etc {
 
 *검증 시, 유효성이 어긋날 때*
 
-![[Pasted image 20230928155356.png]]
+![[Pasted image 20230928155356.png]](Pasted%20image%2020230928155356.png)
