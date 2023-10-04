@@ -5,15 +5,16 @@
 
 - WAS 에서는 `HikariCP` 같은 곳에 커넥션이 보관되어 있다. 데이터베이스에서도 MySQL 기준 `SHOW VARIABLES LIKE '%max_connection%';` 를 통해 현재 커넥션 개수를 확인할 수 있다.
 
-*`SHOW VARIABLES LIKE '%max_connection%'`*
-![[Pasted image 20231003200350.png]]
+*`SHOW VARIABLES LIKE '%max_connection%'`* 
+   
+![[Pasted image 20231003200350.png]](../images/Pasted%20image%2020231003200350.png)
 
 
 -  커넥션을 맺게 되면 DB 내부에 세션이 생성된다. 세션은 트랜잭션을 시작하고 커밋 또는 롤백을 통해 트랜잭션을 종료한다. 그리고 이후에 새로운 트랜잭션을 다시 시작할 수 있다.
 
 *`SHOW PROCESSLIST`*
 
-![[Pasted image 20231003200635.png]]
+![[Pasted image 20231003200635.png]](../images/Pasted%20image%2020231003200635.png)
 
 
 여기서부턴 삽질해보면서 터득한 내용이다.
