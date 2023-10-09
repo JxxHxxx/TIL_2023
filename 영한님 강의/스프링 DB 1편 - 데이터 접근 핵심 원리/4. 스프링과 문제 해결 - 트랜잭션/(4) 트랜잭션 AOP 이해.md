@@ -15,7 +15,7 @@ public void accountTransfer(String fromId, String toId, int money) throws SQLExc
 
 프록시 기술 중 하나인 `CGLIB`를 통해 프록시 객체가 생성되는 것을 로그로도 확인할 수 있다.
 
-![[Pasted image 20231008172300.png]]
+![[Pasted image 20231008172300.png]](../images/Pasted%20image%2020231008172300.png)
 
 프록시는 간단하게 어떠한 일을 대신 처리하는 대리자로 이해하면 편하다. 이렇게 만들어진 프록시 객체가 트랜잭션과 관련된 작업들을 처리하고 실제 비즈니스 로직은 진짜 `MemberService` 가 처리하게 된다. 
 
