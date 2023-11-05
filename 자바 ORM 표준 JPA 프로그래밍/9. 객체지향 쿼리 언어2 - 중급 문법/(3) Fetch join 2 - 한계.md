@@ -26,7 +26,7 @@ String query = "select t from Team t " +
 현재 각 테이블의 레코드는 `Team` 1 , `Member` 4  `ExtranetAccesses`
 2 개이다. 1 * 4 * = 8 개의 레코드를 조회한다. 
 
-![[Pasted image 20231104114408.png]]
+![[Pasted image 20231104114408.png]](../images/Pasted%20image%2020231104114408.png)
 
 실제로 나가는 쿼리는 아래와 같다.
 ```
