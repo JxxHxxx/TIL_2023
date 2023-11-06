@@ -45,7 +45,7 @@ List<Member> members = em.createNamedQuery("Member.findByName", Member.class)
 public class Member {
 ```
 
-![[Pasted image 20231105182757.png]]
+![[Pasted image 20231105182757.png]](../images/Pasted%20image%2020231105182757.png)
 
 
 ##### spring data jpa - Named Query
