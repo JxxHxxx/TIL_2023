@@ -94,7 +94,7 @@ public Step step1() {
 
 이제 완성이 됐다. API 를 호출해보면 정상적으로 실행된걸 확인할 수 있다. 하지만 잡 파라미터 증가 처리를 하지 않았기 때문에 재호출할 수 없다,
 
-![[Pasted image 20231113001742.png]]
+![[Pasted image 20231113001742.png]](images/Pasted%20image%2020231113001742.png)
 
 
 `JobParametersBuilder` 가 제공하는 `getNextJobParameters` 메서드를 이용하면 쉽게 파라미터를 증가시킬 수 있다. 더 자세히는 `RunIdIncrementer` 를 활성화시키는 작업이다.
@@ -113,7 +113,7 @@ public ExitStatus runJob2(@RequestBody JobLaunchRequest request) throws Exceptio
 
 실제로 같은 API를 두 번 호출해도 잘 실행되는걸 확인할 수 있다. 
 
-![[Pasted image 20231113002333.png]]
+![[Pasted image 20231113002333.png]](images/Pasted%20image%2020231113002333.png)
 
 
 잡 실행 파라미터를 보면 `run.id` 값이 증가하는걸 볼 수 있다.
@@ -122,4 +122,4 @@ public ExitStatus runJob2(@RequestBody JobLaunchRequest request) throws Exceptio
 select * from batch_job_execution_params
 ```
 
-![[Pasted image 20231113002415.png]]
+![[Pasted image 20231113002415.png]](images/Pasted%20image%2020231113002415.png)
