@@ -47,7 +47,7 @@ WHERE JOB_EXECUTION_ID = 31;
 
 `SHORT_CONTEXT` 컬럼의 내용이 바로 `ExecutionContext` 를 `JSON` 형식으로 표현한 값이다. 마지막 컬럼 `SERIALIZED_CONTEXT` 는 잡이 실행중이거나 실패한 경우에만 채워진다.
 
-![[Pasted image 20231111193841.png]]
+![[Pasted image 20231111193841.png]](../images/Pasted%20image%2020231111193841.png)
 
 
 
