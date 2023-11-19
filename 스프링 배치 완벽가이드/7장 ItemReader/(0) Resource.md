@@ -5,5 +5,5 @@
 
 예를 들어 아래 `customer.json` 에 접근하기 위해서는 클래스 패스에 `/customer.json` 를 명시하면 된다.
 
-![[Pasted image 20231119174958.png]]
+![[Pasted image 20231119174958.png]](images/Pasted%20image%2020231119174958.png)
 
