@@ -65,6 +65,8 @@ public FlatFileItemReader<Customer> customerItemReader(@Value("#{jobParameters['
 .names(new String[]{"firstName", "middleInitial", "lastName", "addressNumber", "street", "city", "State", "zipCode"})
 ```
 
+위와 같이 빌더 내 메서드를 체이닝해서 구성할 수도 있지만
+아래와 같이 직접 `LineTokenizer` 를 구현해 등록하는 방법도 있다. 빌더 내 `lineTokenizer(LineTokenizer lineTokenizer) 내 인자로 구현한 클래스를 넣으면 된다. 
 
 ```
 @Component  
