@@ -78,4 +78,4 @@ Octavius,T,Johnson,7418,Cum Road,Houston,TX,51507
 
 잡을 실행해보면 아래와 같이 `ValidationException` 예외가 발생하는 것을 볼 수 있다.
 
-![[Pasted image 20231212154606.png]]
+![[Pasted image 20231212154606.png]](../images/Pasted%20image%2020231212154606.png)
