@@ -1,6 +1,6 @@
 `JobRepository` 란, 스프링 배치 잡과 관련된 데이터 저장소이다. 
 
-`JobRepository 는 두 가지 데이터 저장소를 제공한다.
+`JobRepository` 는 두 가지 데이터 저장소를 제공한다.
 
 - 인메모리
 - RDBMS
