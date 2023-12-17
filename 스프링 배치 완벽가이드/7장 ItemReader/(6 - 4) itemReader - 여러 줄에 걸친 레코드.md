@@ -116,7 +116,7 @@ public CustomerFileReaderV4 customerFileReader() {
 
 만약 `CustomerFileReaderV4` 를 `ItemReader` 로 구현하면 아래와 같이 리소스를 열지 않았다는 메시지와 함께 예외가 발생한다.
 
-![[Pasted image 20231211152336.png]]
+![[Pasted image 20231211152336.png]](images/Pasted%20image%2020231211152336.png)
 
 (2) : 래핑한 이유
 
