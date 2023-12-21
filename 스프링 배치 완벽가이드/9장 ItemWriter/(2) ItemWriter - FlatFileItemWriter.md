@@ -40,4 +40,4 @@ public FlatFileItemWriter<WriteCustomer> customerItemWriter(@Value("#{jobParamet
 outputFile=file:/Users/JH/Desktop/hello_spring_batch/formattedCustomers.txt
 ```
 
-![[Pasted image 20231217133457.png]]
+![[Pasted image 20231217133457.png]](images/Pasted%20image%2020231217133457.png)
