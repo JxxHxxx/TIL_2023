@@ -46,6 +46,6 @@ void external_call() {
 
 결과
 
-![[Pasted image 20231224142745.png]]
+![[Pasted image 20231224142745.png]](images/Pasted%20image%2020231224142745.png)
 
 다음 장에서는 이러한 프록시 내부 호출 문제를 해결하는 방법에 대해 알아보도록 하겠다.
