@@ -20,7 +20,7 @@ public void application_ready() {
 ```
 
 
-![[Pasted image 20231224151119.png]]
+![[Pasted image 20231224151119.png]](images/Pasted%20image%2020231224151119.png)
 
 `@PostConstruct` 가 선언된 메서드가 먼저 호출된 뒤, 애플리케이션이 로딩된다. (`JVM running`)
 이후, 트랜잭션을 만드는 것을 확인할 수 있다.
