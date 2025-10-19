@@ -1,4 +1,5 @@
 
+Position 속성이 가질 수 있는 값
 ```
 - static
 - relative
